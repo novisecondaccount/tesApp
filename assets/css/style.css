@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #4C3575;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+nav ul li a:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btnScrollTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    opacity: 0.5;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.btnScrollTop.active {
+    opacity: 0.5;
+    pointer-events: auto;
+}
+.btnScrollTop:hover{
+    cursor: pointer;
+
+}
+.btnScrollTop img {
+    width: 50px;
+    border-radius: 50%;
+}
+.logo {
+    padding-left: 20px;
+}
+.toggle {
+    display: none;
+}
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    height: 500px;
+}
+
+.jumbotron .text-box{
+    font-size: 2rem;
+}
+.jumbotron span {
+    color: #4C3575;
+}
+.jumbotron button {
+    padding: 10px 20px;
+    background: #4C3575;
+    font-size: 0.8em;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.jumbotron button:hover {
+    box-shadow: 2px 2px 31px 0px rgba(133,10,191,0.75);
+}
+.jumbotron .bg-cover img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #4C3575;
+    margin-top: 10px;
+}
+h2 {
+    color: #4C3575;
+}
+.content-info{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+.content-info .text-box {
+    padding: 0 19px;
+}
+.content-info img {
+    width: 40%;
+}
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.cardBox {
+    border: 1px solid #4C3575;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.cardBox h3{
+    color: white;
+    background-color: #4C3575;
+    border-radius: 5px;
+}
+.cardBox:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 20px 0px rgba(120,88,166,0.75);
+    transition: 0.5s;
+}
+.download-section {
+    margin: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+.btnDownload {
+    padding: 10px 20px;
+    background-color: #4C3575;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 7px black;
+    
+}
+
+.btnDownload:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+.info{
+    position: relative;
+    background-color: #4C3575;
+    height: 300px;
+    width: 500px;
+    margin: 180px auto;
+    border: 1px solid #4C3575;
+    text-align: center;
+}
+.info img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-120%) translateX(-50%);
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 15px 50px rgba(133,10,191,0.75);
+}
+.info-text {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+.info-text span {
+    font-weight: 400;
+    opacity: 0.5;
+
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    background-color: #4C3575;
+    color: white;
+    text-align: center;
+}
+footer > p {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+    border-top: 2px solid rgba(0,0,0,0.5);
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+.other-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-top: 10px;
+}
+footer ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+footer div p {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2;
+}
+footer h3{
+ border-bottom: 2px solid;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    h1 {
+        text-align: center;
+        font-size: 1.5em;
+        color: #4C3575;
+    }
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+    .jumbotron {
+        padding: 0 20px;
+        height: 450px;
+    }
+    .jumbotron .text-box{ 
+        font-size: 1.5rem;  
+    }
+    .jumbotron img {
+        width: 80%;
+    }
+    .content-info .text-box {
+        font-size: 1rem;
+        text-align: justify;
+        width: 50%;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .card > div {
+        margin: 10px;
+    }
+    .cardBox{
+        width: 90%;
+    }
+}
+
+
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .toggle {
+        display: inline;
+        border: none;
+        background: transparent;
+        position: relative;
+        top: 3px;
+        right: 10px;
+    }
+    .toggle img {
+        width: 40px;
+    }
+    .toggle input {
+        position: absolute;
+        top: 0;
+        left: -5px;
+        width: 40px;
+        height: 35px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    nav {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #4C3575;
+        width: 100%;
+        height: 50vh;
+        z-index: 1;
+        font-size: 1.5rem;
+        transform: translateY(-120%);
+    }
+    nav ul li a:hover {
+        background: none;
+    }
+    nav ul.slide {
+        transform: translateY(0);
+    }
+    .jumbotron {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    .jumbotron .text-box{ 
+        width: 100%;
+        font-size: 2rem;
+    }
+    .jumbotron button {
+        margin-bottom: 20px;
+    }
+    .jumbotron .bg-cover img {
+        width: 90%;
+        box-shadow: none;
+    }
+    .content-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-info .text-box{
+        width: 90%;
+    }
+    .content-info img{
+        width: 90%;
+    }
+    .card{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around
+    }
+    .card > div {
+        font-size: 1em;
+        margin: 10px;
+    }
+    .cardBox{
+        width: 80%;
+    }
+    .cardBox img {
+        width: 40%;
+        
+    }
+    .info {
+        width: 70%;
+    }
+    .info img {
+        width: 40%;
+
+    }
+    .other-links {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 30px;
+        font-size: 1em;
+    }
+    .other-links > div {     
+        margin: 10px;
+    }
+}
